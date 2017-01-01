@@ -1,0 +1,29 @@
+﻿@model IEnumerable<VAgents.Info.ViewModel.Policy.ListPolicyViewModel>
+<div class="content-wrapper">
+    <div class="row col-md-offset-1">
+        <div class="jumbotron">
+            <h1>
+                Page for all policies
+            </h1>
+            <a href="/Administration/Policy/addnewpolicy">
+                New policy
+            </a>
+        </div>      
+    </div>
+    <div class="row col-md-offset-1">
+
+        @foreach (var post in Model)
+        {
+            <div class="row">
+                <div class="col-md-3">
+                    <h1>
+                        <a href="/Administration/Policy/details/@post.Id">@post.Name</a>
+                    </h1>
+                    <br />
+                    <span> @post.DateTime</span>
+                </div>
+            </div>
+
+        }
+    </div>
+</div>

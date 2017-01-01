@@ -1,0 +1,15 @@
+﻿@model IEnumerable<VAgencyes.ViewModels.ReleaseHistoryViewModel>
+
+
+<div class="content-wrapper">
+    <div class="row col-md-offset-1">
+        <p>
+            <a href="~/administration/about/post" class="btn btn-default">Create new about</a>
+        </p>
+        @foreach (var item in Model)
+        {
+            @Html.DisplayFor(modelItem => item.Name)
+            @Html.DisplayFor(modelItem => item.CreatioTime)
+        }
+    </div>
+</div>

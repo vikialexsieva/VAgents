@@ -1,0 +1,14 @@
+﻿@model IEnumerable<VAgents.Info.ViewModel.CompanyContactViewModel>
+
+<div class="content-wrapper">
+    <div class="row col-md-offset-1">
+
+        @foreach (var item in Model)
+        {
+            @Html.DisplayFor(modelItem => item.Phonenumber)
+            @Html.DisplayFor(modelItem => item.OfficeCountry)
+            @Html.DisplayFor(modelItem => item.WorkFrom)
+            @Html.DisplayFor(modelItem => item.WorkTo)
+        }
+    </div>
+</div>

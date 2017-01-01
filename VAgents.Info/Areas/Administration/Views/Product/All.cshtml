@@ -1,0 +1,18 @@
+﻿@model IEnumerable<VAgents.Info.ViewModel.PointViewModels>
+@{
+    ViewBag.Title = "All";
+    Layout = "~/Views/_ViewStart.cshtml";
+}
+
+<h2>All</h2>
+
+@foreach (var producct in Model)
+{
+    <div class="row">
+        <div class="col-md-4">
+            <div>
+                <strong>Name: </strong><a href="~/Administration/policy/details/@producct.Id">@producct.Name </a>
+            </div>
+        </div>
+    </div>
+}

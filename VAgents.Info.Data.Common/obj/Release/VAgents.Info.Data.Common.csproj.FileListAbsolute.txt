@@ -1,0 +1,7 @@
+C:\Users\Toshiba\Desktop\FinalSite\VAgents.Info\VAgents.Info.Data.Common\bin\Release\VAgents.Info.Data.Common.dll
+C:\Users\Toshiba\Desktop\FinalSite\VAgents.Info\VAgents.Info.Data.Common\bin\Release\VAgents.Info.Data.Common.pdb
+C:\Users\Toshiba\Desktop\FinalSite\VAgents.Info\VAgents.Info.Data.Common\obj\Release\VAgents.Info.Data.Common.dll
+C:\Users\Toshiba\Desktop\FinalSite\VAgents.Info\VAgents.Info.Data.Common\obj\Release\VAgents.Info.Data.Common.pdb
+C:\Users\Toshiba\Desktop\FinalSite\VAgents.Info\VAgents.Info.Data.Common\bin\Release\AutoMapper.dll
+C:\Users\Toshiba\Desktop\FinalSite\VAgents.Info\VAgents.Info.Data.Common\bin\Release\AutoMapper.xml
+C:\Users\Toshiba\Desktop\FinalSite\VAgents.Info\VAgents.Info.Data.Common\obj\Release\VAgents.Info.Data.Common.csprojResolveAssemblyReference.cache

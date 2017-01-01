@@ -1,0 +1,28 @@
+﻿@model IEnumerable<VAgents.Info.ViewModel.MarketingViewModels>
+
+<div class="jumbotron">
+    <h1>
+        Page for all policies
+    </h1>
+    <a href="/Administration/marketing/addcampain">
+        New policy
+    </a>
+</div>
+
+@foreach (var post in Model)
+{
+    <div class="row">
+        <div class="col-md-3">
+            <h1>
+                <a href="/Administration/Marketing/Details/@post.Id">@post.Name</a>
+            </h1>
+            <p>
+                @post.Description
+            </p>
+            <br />
+            <span> @post.StartTime</span>
+            <span> @post.EndTime</span>
+        </div>
+    </div>
+
+}

@@ -1,0 +1,18 @@
+﻿@model IEnumerable<VAgents.Info.Areas.Administration.Models.InfoCompanyFeedBackCompanyViewModel>
+
+
+<div class="content-wrapper">
+    <div class="row col-md-offset-1">
+
+        <p>
+            @Html.ActionLink("Create New", "Create")
+        </p>
+
+        @foreach (var item in Model)
+        {
+            <a href="/administration/companyfeedbackcompany/details/@item.Id">
+                @Html.DisplayFor(modelItem => item.CompanyName)
+            </a>
+        }
+    </div>
+</div>

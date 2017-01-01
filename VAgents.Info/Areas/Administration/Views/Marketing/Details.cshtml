@@ -1,0 +1,15 @@
+﻿@model  VAgents.Info.ViewModel.MarketingViewModels
+
+<h1>@Model.Name </h1>
+<p>
+    @Html.Raw(Model.Description)
+</p>
+<span>
+    @Model.StartTime
+</span>
+<span>@Model.EndTime</span>
+
+@Html.Partial("AddPoint", new VAgents.Info.ViewModel.PointViewModels(Model.Id))
+
+
+@Html.Partial("ListPoint")

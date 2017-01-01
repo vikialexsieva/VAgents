@@ -1,0 +1,16 @@
+﻿    @model IEnumerable<VAgents.Info.Model.Point>
+
+@foreach (var post in Model)
+{
+    <div class="row">
+        <div class="col-md-3">
+          
+            <p>
+                @post.Name
+            </p>
+            <br />
+            <span> @post.Points</span>
+        </div>
+    </div>
+
+}

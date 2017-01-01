@@ -1,0 +1,16 @@
+﻿@model VAgents.Info.Areas.Administration.Models.InfoCompanyFeedBackCompanyViewModel
+
+<div class="content-wrapper">
+    <div class="row col-md-offset-1">
+
+        <div>
+            @Html.DisplayNameFor(model => model.CompanyName)
+            @Html.DisplayNameFor(model => model.Description)
+            @Html.DisplayFor(model => model.Description)
+            @if (Model.Image != null)
+            {
+                <img src="@Url.Action("Image", "CompanyFeedBackCompany")" class="img-responsive" />
+            }
+        </div>
+    </div>
+</div>

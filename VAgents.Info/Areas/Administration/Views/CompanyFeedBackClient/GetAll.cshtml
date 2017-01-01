@@ -1,0 +1,16 @@
+﻿@model IEnumerable<VAgents.Info.ViewModel.CompanyFeedBackClientViewModel>
+
+<div class="content-wrapper">
+    <div class="row col-md-offset-1">
+
+        @foreach (var item in Model)
+        {
+                @Html.DisplayFor(modelItem => item.Name)
+                @Html.DisplayFor(modelItem => item.LastName)
+               
+                @Html.DisplayFor(modelItem => item.WorkInCompany)
+                @Html.DisplayFor(modelItem => item.CompanyPosition)
+                @Html.DisplayFor(modelItem => item.Description)
+        }
+    </div>
+</div>

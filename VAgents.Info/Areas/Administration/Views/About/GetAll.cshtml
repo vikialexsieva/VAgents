@@ -1,0 +1,23 @@
+﻿@model IEnumerable<VAgents.Info.Areas.Administration.Models.AboutViewModel>
+
+
+<div class="content-wrapper">
+    <div class="row col-md-offset-1">
+        <p>
+            <a href="~/administration/about/post" class="btn btn-default">Create new about</a>
+            @Html.ActionLink("Create New", "Create", new { @class = "btn btn-default" })
+        </p>
+        @foreach (var item in Model)
+        {
+                    <a href="~/administration/about/edit/@item.Id">
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </a>
+
+                    @Html.DisplayFor(modelItem => item.CreationTime)
+                    <a href="~/administration/about/updateabout/@item.Id">
+                        Update
+                    </a>
+              
+        }
+    </div>
+</div>

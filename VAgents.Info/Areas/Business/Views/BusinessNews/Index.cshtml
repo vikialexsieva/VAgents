@@ -1,0 +1,14 @@
+﻿@model IEnumerable<VAgents.Info.Areas.Businesses.Models.BusinessNewsViewModels>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Test1994/_ViewStart.cshtml";
+}
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+@foreach (var item in Model) {
+    @Html.DisplayFor(modelItem => item.Name)
+}

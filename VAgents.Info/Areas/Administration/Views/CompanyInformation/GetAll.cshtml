@@ -1,0 +1,18 @@
+﻿@model IEnumerable<VAgents.Info.ViewModel.CompanyInformationViewModels>
+
+<div class="content-wrapper">
+    <div class="row col-md-offset-1">
+
+
+        <p>
+            @Html.ActionLink("Create New", "Create")
+        </p>
+
+        @foreach (var item in Model)
+        {
+            @Html.DisplayFor(modelItem => item.Name)
+            @Html.DisplayFor(modelItem => item.Description)
+            @Html.DisplayFor(modelItem => item.CreationTime)
+        }
+    </div>
+</div>

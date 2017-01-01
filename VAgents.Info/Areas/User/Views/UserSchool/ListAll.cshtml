@@ -1,0 +1,58 @@
+﻿@model VAgents.Info.ViewModel.SchoolViewModels
+
+@{
+    ViewBag.Title = "ListAll";
+}
+
+<h2>ListAll</h2>
+
+<div>
+    <h4>SchoolViewModels</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Spaciality)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Spaciality)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.YearEdition)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.YearEdition)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MountEdition)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MountEdition)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateEdition)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateEdition)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

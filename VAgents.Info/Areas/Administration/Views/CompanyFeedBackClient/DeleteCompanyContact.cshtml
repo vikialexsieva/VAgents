@@ -1,0 +1,31 @@
+﻿@model VAgents.Info.ViewModel.CompanyFeedBackClientViewModel
+
+
+<div class="content-wrapper">
+    <div class="row col-md-offset-1">
+
+        <h3>Are you sure you want to delete this?</h3>
+        <div>
+            @Html.DisplayNameFor(model => model.Name)
+            @Html.DisplayFor(model => model.Name)
+            @Html.DisplayNameFor(model => model.LastName)
+            @Html.DisplayFor(model => model.LastName)
+            @Html.DisplayNameFor(model => model.WorkInCompany)
+            @Html.DisplayFor(model => model.WorkInCompany)
+            @Html.DisplayNameFor(model => model.CompanyPosition)
+            @Html.DisplayFor(model => model.CompanyPosition)
+            @Html.DisplayNameFor(model => model.Description)
+            @Html.DisplayFor(model => model.Description)
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-actions no-color">
+                    <input type="submit" value="Delete" class="btn btn-default" /> |
+                    @Html.ActionLink("Back to List", "Index")
+                </div>
+            }
+        </div>
+    </div>
+</div>

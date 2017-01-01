@@ -1,0 +1,18 @@
+﻿@model IEnumerable<VAgents.Areas.Users.Models.ListAllBusinessViewModels>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@foreach (var item in Model) {
+    @Html.DisplayFor(modelItem => item.Name)
+    @Html.DisplayFor(modelItem => item.Description)
+    @Html.DisplayFor(modelItem => item.Street)
+    @Html.DisplayFor(modelItem => item.City)
+    @Html.DisplayFor(modelItem => item.Country)
+}
