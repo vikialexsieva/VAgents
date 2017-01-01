@@ -1,0 +1,13 @@
+﻿namespace VAgents.Info.Model.Solution
+{
+    public class SolutionSocialLink
+    {
+        public int Id { get; set; }
+
+        public string URL { get; set; }
+
+        public string Image { get; set; }
+        public int SolutionId { get; set; }
+        public Solutions Solution { get; set; }
+    }
+}
